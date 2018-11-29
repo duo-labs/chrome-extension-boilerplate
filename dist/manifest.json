@@ -1,0 +1,37 @@
+{
+    "name": "TS/R/WP Chrome Extension",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "Boilerplate for a Chrome extension with TypeScript, React, and Webpack.",
+    "homepage_url": "https://duo.com/labs",
+    "icons": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "browser_action": {
+      "default_title": "TSRWPCX",
+      "default_popup": "popup.html"
+    },
+    "default_locale": "en",
+    "background": {
+      "scripts": [
+        "js/background.js"
+      ],
+      "persistent": true
+    },
+    "permissions": [
+      "https://*/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": [
+          "https://*/*"
+        ],
+        "js": [
+          "js/content.js"
+        ]
+      }
+    ]
+  }
+  

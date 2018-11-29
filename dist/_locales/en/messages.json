@@ -1,0 +1,6 @@
+{
+  "l10nHello": {
+    "message": "Hello, React!",
+    "description": "Hello text for the popup."
+  }
+}
